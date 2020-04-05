@@ -1,11 +1,12 @@
 # -*- coding: UTF-8 -*-
 import smtplib
 from email.mime.text import MIMEText
+from .settings import *
 
 mailserver = "smtp.163.com"  # 邮箱服务器地址
-username_send = 'fanxiangs@163.com'  # 邮箱用户名
-password = '******'  # 邮箱密码：需要使用授权码
-username_recv = '******'  # 收件人，多个收件人用逗号隔开
+username_send = username_send  # 邮箱用户名
+password = password  # 邮箱密码：需要使用授权码
+username_recv = username_recv  # 收件人，多个收件人用逗号隔开
 mail = MIMEText('这是发用的邮件内容')
 mail['Subject'] = '这是邮件主题'
 mail['From'] = username_send  # 发件人
