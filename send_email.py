@@ -24,4 +24,5 @@ def send_eamils(content):
     print('success')
 
 if __name__ == '__main__':
-    send_eamils()
+    context = 'test'
+    send_eamils(context)
